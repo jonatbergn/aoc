@@ -1,6 +1,6 @@
-import Day.Companion.newDay
+import Day.Companion.day
 
-fun main() = newDay(2) {
+fun main() = day(2) {
 
     sample = """
             Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
@@ -12,7 +12,7 @@ fun main() = newDay(2) {
 
     part01 {
         sampleResult = 8
-        solution = Solution {
+        solution = {
             sumOf {
                 val (id, game) = it.split(':')
                 val possible = game
@@ -34,7 +34,7 @@ fun main() = newDay(2) {
 
     part02 {
         sampleResult = 2286
-        solution = Solution {
+        solution = {
             sumOf { game ->
                 game.substringAfter(':')
                     .trim()
