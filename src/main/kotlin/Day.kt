@@ -25,12 +25,9 @@ data class Day(
         val realInput = javaClass.getResourceAsStream(fileName)?.lines() ?: return
         val solvedSampleResult = sampleInput.run(solution)
         val solvedSolutionResult = realInput.run(solution)
-        if (sampleResult != solvedSampleResult) error("Day$number/Part${part.number}: Expected $sampleResult, but was $solvedSampleResult")
-        if (solutionResult == null) {
-            println("Day$number/Part${part.number}: Solved: '$solvedSolutionResult'")
-        } else if (solutionResult != solvedSolutionResult) {
-            error("Day$number/Part${part.number}: Expected $solutionResult, but was $solvedSolutionResult")
-        }
+        check(sampleResult == solvedSampleResult) { "Part $number failed" }
+        check(solutionResult == solvedSolutionResult) { "Part $number failed" }
+        println(solvedSolutionResult)
     }
 
     private fun InputStream.lines() = bufferedReader().lineSequence()
