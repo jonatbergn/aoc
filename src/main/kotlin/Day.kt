@@ -19,14 +19,14 @@ data class Day(
 
     private fun solve(part: Part) {
         val (number, sampleResult, solution, solutionResult) = part
-        if (sampleResult == null) error("Sample result missing")
+        if (sampleResult == null) return
         if (solution == null) error("Solution missing")
         val sampleInput = sample?.byteInputStream()?.lines() ?: return
         val realInput = javaClass.getResourceAsStream(fileName)?.lines() ?: return
         val solvedSampleResult = sampleInput.run(solution)
         val solvedSolutionResult = realInput.run(solution)
         check(sampleResult == solvedSampleResult) { "Part $number failed" }
-        check(solutionResult == solvedSolutionResult) { "Part $number failed" }
+        check(solutionResult == null || solutionResult == solvedSolutionResult) { "Part $number failed" }
         println(solvedSolutionResult)
     }
 
