@@ -1,13 +1,11 @@
-import Day.Companion.day
-
-fun main() = day(1) {
+fun main() = Day(1) {
 
     sample = """
-                1abc2
-                pqr3stu8vwx
-                a1b2c3d4e5f
-                treb7uchet
-                """.trimIndent()
+        1abc2
+        pqr3stu8vwx
+        a1b2c3d4e5f
+        treb7uchet
+        """.trimIndent()
 
     part01 {
         sampleResult = 142

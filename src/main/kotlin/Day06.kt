@@ -1,6 +1,4 @@
-import Day.Companion.day
-
-fun main() = day(6) {
+fun main() = Day(6) {
 
     sample = """
         Time:      7  15   30

@@ -1,6 +1,4 @@
-import Day.Companion.day
-
-fun main() = day(5) {
+fun main() = Day(5) {
 
     sample = """
         seeds: 79 14 55 13

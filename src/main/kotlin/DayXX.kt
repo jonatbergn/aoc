@@ -1,6 +1,4 @@
-import Day.Companion.day
-
-fun main() = day(-1) {
+fun main() = Day(-1) {
 
     sample = """
         
