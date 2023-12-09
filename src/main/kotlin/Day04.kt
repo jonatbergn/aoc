@@ -9,13 +9,13 @@ fun main() = Day(4) {
         Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11
     """.trimIndent()
 
-    part01 {
+    part {
         sampleResult = 13
         solution = { sumOf { 1 shl it.wins() shr 1 } }
         solutionResult = 21959
     }
 
-    part02 {
+    part {
         sampleResult = 30
         solution = {
             val wins = map { it.wins() }.toList()

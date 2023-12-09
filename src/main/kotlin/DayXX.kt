@@ -4,13 +4,13 @@ fun main() = Day(-1) {
         
     """.trimIndent()
 
-    part01 {
+    part {
         sampleResult = null
         solution = { }
         solutionResult = null
     }
 
-    part02 {
+    part {
         sampleResult = null
         solution = { }
         solutionResult = null

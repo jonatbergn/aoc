@@ -8,7 +8,7 @@ fun main() = Day(2) {
             Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
             """.trimIndent()
 
-    part01 {
+    part {
         sampleResult = 8
         solution = {
             sumOf {
@@ -30,7 +30,7 @@ fun main() = Day(2) {
         solutionResult = 2101
     }
 
-    part02 {
+    part {
         sampleResult = 2286
         solution = {
             sumOf { game ->

@@ -8,13 +8,13 @@ fun main() = Day(7) {
         QQQJA 483
     """.trimIndent()
 
-    part01 {
+    part {
         sampleResult = 6440
         solution = { solve(cards = "23456789TJQKA") }
         solutionResult = 250370104
     }
 
-    part02 {
+    part {
         sampleResult = 5905
         solution = { solve(cards = "23456789TQKA") }
         solutionResult = 251735672

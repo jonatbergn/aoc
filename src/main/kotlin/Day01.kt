@@ -7,13 +7,13 @@ fun main() = Day(1) {
         treb7uchet
         """.trimIndent()
 
-    part01 {
+    part {
         sampleResult = 142
         solution = { solve(candidates = digits) }
         solutionResult = 56506
     }
 
-    part02 {
+    part {
         sampleResult = 142
         solution = { solve(candidates = digits + numbers) }
         solutionResult = 56017

@@ -5,7 +5,7 @@ fun main() = Day(6) {
         Distance:  9  40  200
     """.trimIndent()
 
-    part01 {
+    part {
         sampleResult = 288
         solution = {
             val (times, records) = map { it.numbers() }.toList()
@@ -14,7 +14,7 @@ fun main() = Day(6) {
         solutionResult = 2612736
     }
 
-    part02 {
+    part {
         sampleResult = 71503
         solution = {
             val (time, record) = map { it.numbers().joinToString("").toLong() }.toList()

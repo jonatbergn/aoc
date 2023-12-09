@@ -13,13 +13,13 @@ fun main() = Day(3) {
         .664.598..
         """.trimIndent()
 
-    part01 {
+    part {
         sampleResult = 4361
         solution = { solve { sumOf { it.sum() } } }
         solutionResult = 520135
     }
 
-    part02 {
+    part {
         sampleResult = 467835
         solution = { solve { filter { it.size == 2 }.sumOf { (a, b) -> a * b } } }
         solutionResult = 72514855

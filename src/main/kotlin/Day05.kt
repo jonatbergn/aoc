@@ -36,7 +36,7 @@ fun main() = Day(5) {
         56 93 4
     """.trimIndent()
 
-    part01 {
+    part {
         sampleResult = 35
         solution = {
             val almanac = map { it.split(' ').mapNotNull(String::toLongOrNull) }.iterator()
@@ -57,7 +57,7 @@ fun main() = Day(5) {
         solutionResult = 3374647
     }
 
-    part02 {
+    part {
         sampleResult = null
         solution = null
         solutionResult = null

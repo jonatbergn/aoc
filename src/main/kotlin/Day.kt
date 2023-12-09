@@ -5,9 +5,6 @@ class Day private constructor(number: Number) {
     var sample: String? = null
     private val fileName = "/day${number.toString().padStart(2, '0')}"
 
-    fun part01(block: Part.() -> Unit) = solve(Part(number = 1).apply(block))
-    fun part02(block: Part.() -> Unit) = solve(Part(number = 2).apply(block))
-
     fun part(block: Part.() -> Unit) = solve(Part(number = 2).apply(block))
 
 
